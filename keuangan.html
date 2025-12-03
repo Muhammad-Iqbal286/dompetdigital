@@ -18,13 +18,28 @@
             box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
         }
         h3 { text-align: center; font-weight: bold; }
+        .menu-buttons a {
+    min-width: 120px;
+}
+
+@media (max-width: 576px) {
+    .menu-buttons a {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
+
     </style>
 </head>
 <body>
 
 <div class="container-box">
     <h3>Input Data Keuangan</h3>
-
+    <div class="menu-buttons text-center mb-3">
+    <a href="tabungan.html" class="btn btn-outline-success me-2 mb-2">Tabungan</a>
+    <a href="https://docs.google.com/spreadsheets/d/1PLHhCL5YvywoMbIR11iLpRMVgC964CjF8WBfnmoJKOQ/edit?usp=sharing" class="btn btn-outline-warning mb-2">Riwayat Keuangan</a>
+    <a href="https://docs.google.com/spreadsheets/d/1jdgnxgR0le7GeWtxIYPWuQtK3SBacnOaxypabOfJeEo/edit?usp=sharing" class="btn btn-outline-warning mb-2">Riwayat Tabungan</a>
+</div>
     <form id="formData">
         <div class="mb-3">
             <label class="form-label">Nama</label>
@@ -119,3 +134,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
 </body>
 </html>
+
